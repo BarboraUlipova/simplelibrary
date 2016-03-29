@@ -8,7 +8,7 @@ if (!$link) {
 
 else {
 	
-	$sql_query = "INSERT INTO `publications`(`isbn`,`title`) VALUES ('".$_POST['isbn']."','".$_POST['nazev']."')";
+	$sql_query = "INSERT INTO `publications`(`isbn`,`title`,`numpages`) VALUES ('".$_POST['isbn']."','".$_POST['nazev']."',".$_POST['pocet_stran'].")";
 	mysqli_query($link, $sql_query);
 }
 
